@@ -1,0 +1,254 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+word-break: break-word;
+}
+
+body {
+font-family: "Roboto Slab", serif;
+font-size: 16px;
+line-height: 1.2em;
+background-color: #ddd;
+}
+
+h1, h2, h3, h4, h5, h6 {
+line-height: 1.3em;
+font-weight: 700;
+color: #010C2A;
+}
+
+a{
+text-decoration: none;
+}
+div{
+    display: block;
+}
+
+.main_nav {
+display: flex;
+height: 110px;
+padding: 0 15px;
+background-color: #fff;
+
+.header_logo {
+    min-width: 220px;
+    height: 110px;
+    padding: 41px 39.5px 31px;
+    background: linear-gradient(246deg, #CF00FE 19%, #005DE0 87%);
+    transform: translateY(14px);
+    border-radius: 10px;
+    padding: 36px 40px;
+    z-index: 2;
+    .logo {
+    max-width: 100%;
+    height: auto;
+    transform: scale(1);
+    border-radius: 5px;
+    vertical-align: middle;
+    }
+}
+.header_contact {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .icon {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    margin-right: 15px;
+    animation: pulse 1s infinite linear;
+    
+    }
+    .desc {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 16px;
+    line-height: 1.75;
+    font-weight: 600;
+    color: #494A4D;
+    font-family: "Roboto Slab", serif;
+    white-space: nowrap;
+    span {
+        font-size: 18px;
+        line-height: 28px;
+        color: #1B1D21;
+        margin-right: 9px;
+    }
+    }
+}
+.menu {
+    margin: 4px 0 0 60px;
+    display: flex;  
+    font-family: "Roboto Slab", serif;
+    font-size: 16px;
+    position: relative;
+    align-items: center;
+    line-height: 64px;
+    li {
+        list-style-type: none;
+        margin-right: 40px;
+        position: relative;;
+        white-space: nowrap;
+        a {
+        font-size: 16px;
+        line-height: 1.625;
+        font-family: "Roboto Slab", serif;
+        font-weight: 600;
+        color: #1B1D21;
+        text-transform: capitalize;
+        }
+        i {
+        font-size: 12px;
+        }
+    }
+    .menu_first_items {
+        > a {
+        color: #00B0FC;
+        }
+        i {
+        color: #00B0FC;
+        }
+    }
+    .sub_menu {
+        display: none;
+        position: absolute;
+        width: 210px;
+        box-shadow: 0 10px 70px 0 rgba(0, 0, 0, 0.1);
+        z-index: 2;
+        border-radius: 2px;
+        background-color: #fff;
+        a {
+        display: block;
+        padding: 10px 20px;
+        }
+    }
+    a:hover {
+        color: #00B0FC;
+    }
+    > li:hover {
+        color: #00B0FC;
+    }
+    >li:hover .sub_menu {
+        display: block;
+    }
+    }
+    .header_search {
+    .show_search i {
+        font-size: 18px;
+        line-height: 110px;
+        padding-left: 12px;
+    }
+    }
+    .header_button {
+    display: flex;
+    align-self: center;
+    min-width: 200px;
+    height: 60px;
+    background: linear-gradient(246deg, #CF00FE -10%, #005DE0 87%);
+    border-radius: 30px;
+    margin-left: 32px;
+    &:hover {
+        background: linear-gradient(246.06deg, #CF00FE -19.26%, #005DE0 87.05%);
+    }
+    .tf_button {
+        color: #fff;
+        font-size: 16px;
+        font-family: "Roboto Slab", serif;
+        text-transform: uppercase;
+        line-height: 60px;
+        margin: 0 auto;
+    }
+    } 
+}
+
+.main {
+    .page_title{
+        padding: 89px 0 89px;
+        background: url(../images/bg1.jpg);
+        background-size: cover;
+        .main_container {
+            width:1200px;
+            height:600px;
+            margin:auto;
+            display: flex;
+            .container_title-left {
+                padding-right: 30px;
+                max-width: 555px;
+                .sub_text {
+                    color: #9000FF;
+                    text-transform: capitalize;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 26px;
+                    padding-left: 80px;
+                    position: relative;
+                }
+                .title > h1 {
+                    margin-bottom: 30px;
+                    font-size: 72px;
+                    line-height: 1.18;
+                }
+                .desc_title {
+                    font-size: 20px;
+                    line-height: 32px;
+                    text-transform: capitalize;
+                    padding-right: 100px;
+                    margin-bottom: 51px;
+                }
+                .btn_button {
+                    padding: 0px 42px;
+                    overflow: hidden;
+                    border-radius: 30px;
+                    position: relative;
+                    background: linear-gradient(246deg, #CF00FE -10%, #005DE0 87%);
+                    font-weight: 500;
+                    display: inline-block;
+                    align-self: center;
+                    
+                    .service_button {
+                            font-size: 16px;
+                            line-height: 60px;
+                            color: #fff;
+                            text-transform: uppercase;
+                    }   
+                    &:hover {
+                        background: linear-gradient(246.06deg, #CF00FE -19.26%, #005DE0 87.05%);
+                    } 
+                }
+                .slide_show {
+                    margin-top: 100px;
+                    .slide{
+                        font-size: 24px;
+                        margin-right: 20px;
+                        color: #CF00FE;
+                    }
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+            .container_title_right{
+                margin-right: 0;
+                img{
+                    width: 665px;
+                    height: 640px;
+                    border: 12px solid #fff;
+                    position: absolute;
+                    box-shadow: 0 20px 70px 0 rgba(0, 0, 0, 0.2);
+                    border-radius: 5px;
+                    animation: mymove 0,3s infinite linear;
+                }
+            }
+        }
+        
+    }
+  }
