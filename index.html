@@ -8,137 +8,209 @@
 <link rel="stylesheet" href="css/index.css">
 <link rel="stylesheet" href="css/reponsive.css">
 <link href="fontawesome-free-6.1.1-web/css/all.min.css" rel="stylesheet"/>
+<style>
+  .header {
+    background-color: white
+  }
+  .main_nav {
+    background-color: initial;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  .header-right {
+    display: flex;
+    flex: 1;
+  }
+  @media screen and (max-width: 1600px) {
+    .main_nav {
+      justify-content: space-between;
+    }
+    .header-right {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #fff;
+      flex-direction: column;
+      padding-top: 110px;
+      z-index: 99;
+      transform: translateX(100%);
+      transition: all 0.3s ease;
+    }
+    .header-right.active {
+      transform: translateX(0);
+    }
+    .header_button {
+      order: 10;
+    }
+    .header_contact {
+      order: 9;
+    }
+    .header-right .menu {
+      flex-direction: column;
+      margin-left: 0;
+      margin-top: 0;
+    }
+    .menu-bars {
+      width: 110px;
+      height: 110px;
+      font-size: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 100;
+    }
+    .header_search {
+      order: 12;
+    }
+  }
+  .main {
+    display: none;
+  }
+</style>
 </head>
 <body>
-<div class="header">
-<div class="main_nav">
-    <div class="header_logo">
-    <img src="/images/logo.png" alt="" class="logo">
-    </div>
-    <a href="#" class="header_contact">
-    <div class="icon"><i class="fa-solid fa-phone"></i></div>
-    <div class="desc">
-        <span>Phone:</span>+012 (345) 6789
-    </div>
-    </a>
-    <ul class="menu">
-    <li class="menu_first_items">
-        <a href="#" class="menu_content">Home</a>
-        <i class="far fa-plus"></i>
-        <ul class="sub_menu">
-        <li>
-            <a href="#" class="sub_menu_items">Home 1</a>
-        </li>
-        <li>
-            <a href="#" class="sub_menu_items">Home 2</a>
-        </li>
-        <li>
-            <a href="#" class="sub_menu_items">Home 3</a>
-        </li>
-        </ul> 
-    </li>
-    <li class="menu_items">
-        <a href="#" class="menu_content">About</a>
-        <i class="far fa-plus"></i>
-        <ul class="sub_menu">
-        <li>
-            <a href="#" class="sub_menu_items">About</a>
-        </li>
-        <li>
-            <a href="#" class="sub_menu_items">OurTeam</a>
-        </li>
-        <li>
-            <a href="#" class="sub_menu_items">Team Details</a>
-        </li>
-        <li>
-            <a href="#" class="sub_menu_items">Service</a>
-        </li>
-        <li>
-            <a href="#" class="sub_menu_items">Service Details</a>
-        </li>
-        <li>
-            <a href="#" class="sub_menu_items">History</a>
-        </li>
-        <li>
-            <a href="#" class="sub_menu_items">Pricing</a>
-        </li>
-        <li>
-            <a href="#" class="sub_menu_items">FAQ</a>
-        </li>
-        </ul>  
-    </li>
-    <li class="menu_items">
-        <a href="#" class="menu_content">Portfolio</a>
-        <i class="far fa-plus"></i> 
-        <ul class="sub_menu">
-        <li>
-            <a href="#" class="sub_menu_items">Portfolio</a>
-        </li>
-        <li>
-            <a href="#" class="sub_menu_items">Portfolio Details</a>
-        </li>
-        </ul> 
-    </li>
-    <li class="menu_items">
-        <a href="#" class="menu_content">Product</a>
-        <i class="far fa-plus"></i> 
-        <ul class="sub_menu">
-        <li>
-            <a href="#" class="sub_menu_items">Product</a>
-        </li>
-        <li>
-            <a href="#" class="sub_menu_items">Product Details</a>
-        </li>
-        </ul> 
-    </li>
-    <li class="menu_items">
-        <a href="#" class="menu_content">News</a>
-        <i class="far fa-plus"></i> 
-        <ul class="sub_menu">
-        <li>
-            <a href="#" class="sub_menu_items">Blog Standard</a>
-        </li>
-        <li>
-            <a href="#" class="sub_menu_items">Blog Details</a>
-        </li>
-        </ul> 
-    </li>
-    <li class="menu_items">
-        <a href="#" class="menu_content">Contact Us</a>
-    </li>
-    </ul>
-    <div class="header_search">
-    <a href="#" class="show_search">
-        <i class="fa-solid fa-magnifying-glass"></i>
-    </a>
-    </div>
-    <div class="header_button">
-    <a href="#" class="tf_button">Get Solution</a>
-    </div>     
-</div>
-</div>
-<div class="main">
-    <div class="page_title">
-    <div class="main_container slide 1">
-        <div class="container_title-left">
-            <div class="sub_text">We're The Best</div>
-            <div class="title"><h1>Making IT A Part Of Your Business</h1></div>
-            <div class="desc_title">Aenean Congue Mi Nulla, Eget Feiugiat Nibh Fringilla A.Sed Consequat</div>
-            <div class="btn_button">
-                <a href="#" class="service_button"> View Services</a>
-            </div>
-            <div class="slide_show">
-                <span class="slide">01</span>
-                <span class="slide">02</span>
-                <span class="slide">03</span>
-            </div>
+  <div class="header">
+    <div class="main_nav" >
+        <div class="header_logo">
+          <img src="/images/logo.png" alt="" class="logo">
         </div>
-        <div class="container_title_right">
-            <img src="images/imgslider.jpg"/>
+        <div class="menu-bars">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="header-right">
+          <a href="#" class="header_contact">
+            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="desc">
+              <span>Phone:</span>+012 (345) 6789
+            </div>
+          </a>
+          <ul class="menu">
+            <li class="menu_first_items">
+              <a href="#" class="menu_content">Home</a>
+              <i class="far fa-plus"></i>
+              <ul class="sub_menu">
+                <li>
+                  <a href="#" class="sub_menu_items">Home 1</a>
+                </li>
+                <li>
+                  <a href="#" class="sub_menu_items">Home 2</a>
+                </li>
+                <li>
+                  <a href="#" class="sub_menu_items">Home 3</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu_items">
+              <a href="#" class="menu_content">About</a>
+              <i class="far fa-plus"></i>
+              <ul class="sub_menu">
+                <li>
+                  <a href="#" class="sub_menu_items">About</a>
+                </li>
+                <li>
+                  <a href="#" class="sub_menu_items">OurTeam</a>
+                </li>
+                <li>
+                  <a href="#" class="sub_menu_items">Team Details</a>
+                </li>
+                <li>
+                  <a href="#" class="sub_menu_items">Service</a>
+                </li>
+                <li>
+                  <a href="#" class="sub_menu_items">Service Details</a>
+                </li>
+                <li>
+                  <a href="#" class="sub_menu_items">History</a>
+                </li>
+                <li>
+                  <a href="#" class="sub_menu_items">Pricing</a>
+                </li>
+                <li>
+                  <a href="#" class="sub_menu_items">FAQ</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu_items">
+              <a href="#" class="menu_content">Portfolio</a>
+              <i class="far fa-plus"></i>
+              <ul class="sub_menu">
+                <li>
+                  <a href="#" class="sub_menu_items">Portfolio</a>
+                </li>
+                <li>
+                  <a href="#" class="sub_menu_items">Portfolio Details</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu_items">
+              <a href="#" class="menu_content">Product</a>
+              <i class="far fa-plus"></i>
+              <ul class="sub_menu">
+                <li>
+                  <a href="#" class="sub_menu_items">Product</a>
+                </li>
+                <li>
+                  <a href="#" class="sub_menu_items">Product Details</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu_items">
+              <a href="#" class="menu_content">News</a>
+              <i class="far fa-plus"></i>
+              <ul class="sub_menu">
+                <li>
+                  <a href="#" class="sub_menu_items">Blog Standard</a>
+                </li>
+                <li>
+                  <a href="#" class="sub_menu_items">Blog Details</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu_items">
+              <a href="#" class="menu_content">Contact Us</a>
+            </li>
+          </ul>
+          <div class="header_search">
+            <a href="#" class="show_search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </div>
+          <div class="header_button">
+            <a href="#" class="tf_button">Get Solution</a>
+          </div>
         </div>
     </div>
-    </div>
-</div>
+  </div>
+  <div class="main">
+      <div class="page_title">
+      <div class="main_container slide 1">
+          <div class="container_title-left">
+              <div class="sub_text">We're The Best</div>
+              <div class="title"><h1>Making IT A Part Of Your Business</h1></div>
+              <div class="desc_title">Aenean Congue Mi Nulla, Eget Feiugiat Nibh Fringilla A.Sed Consequat</div>
+              <div class="btn_button">
+                  <a href="#" class="service_button"> View Services</a>
+              </div>
+              <div class="slide_show">
+                  <span class="slide">01</span>
+                  <span class="slide">02</span>
+                  <span class="slide">03</span>
+              </div>
+          </div>
+          <div class="container_title_right">
+              <img src="images/imgslider.jpg"/>
+          </div>
+      </div>
+      </div>
+  </div>
 
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
