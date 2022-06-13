@@ -507,12 +507,12 @@ p {
 .tfsection .section_content .tfanimate_content .icon_box .readmore:hover .forward1 {
   opacity: 0;
   visibility: hidden;
-  transition: all 0.2s ease;
+  transition: all 0.1s ease;
 }
 .tfsection .section_content .tfanimate_content .icon_box .readmore:hover .forward2 {
   opacity: 1;
   visibility: visible;
-  transition: all 0.2s ease;
+  transition: all 0.1s ease;
 }
 .tfsection .section_content .tfanimate_content:hover {
   background-image: linear-gradient(246.06deg, #CF00FE -19.26%, #005DE0 87.05%);
