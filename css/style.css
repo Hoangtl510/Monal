@@ -554,5 +554,155 @@ p {
 .tfsection .section_content1 .tfanimate_content:hover .readmore span::after, .tfsection .section_content1 .tfanimate_content:hover .readmore span::before {
   color: white;
 }
+.tfsection .tfsection_about {
+  display: flex;
+  margin-left: 200px;
+}
+.tfsection .tfsection_about .section_content2 {
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.tfsection .tfsection_about .section_content2 .section_content2-img {
+  padding-right: 70px;
+  padding-bottom: 52px;
+  position: relative;
+}
+.tfsection .tfsection_about .section_content2 .section_content2-img .experience-box {
+  width: 290px;
+  height: 350px;
+  text-align: left;
+  position: absolute;
+  left: -50px;
+  bottom: 0;
+  background: #010C2A;
+  border-radius: 5px;
+  padding: 50px 40px 42px;
+}
+.tfsection .tfsection_about .section_content2 .section_content2-img .experience-box .number-content {
+  margin-bottom: 20px;
+  font-size: 70px;
+  line-height: 80px;
+  font-weight: bold;
+  font-family: "Roboto Slab", serif;
+  color: #fff;
+}
+.tfsection .tfsection_about .section_content2 .section_content2-img .experience-box h5 {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.tfsection .tfsection_about .section_content2 .section_content2-img .experience-box p {
+  text-transform: capitalize;
+  padding-left: 20px;
+  margin-bottom: 0;
+  position: relative;
+  color: #fff;
+}
+.tfsection .tfsection_about .section_content2 .section_content2-img .experience-box p::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #C4C4C4;
+}
+.tfsection .tfsection_about .title_section {
+  padding-bottom: 60px;
+  margin-right: 200px;
+}
+.tfsection .tfsection_about .title_sub-title {
+  padding-left: 70px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  color: #9000FF;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.tfsection .tfsection_about .title_sub-title:before {
+  position: absolute;
+  height: 4px;
+  width: 60px;
+  content: "";
+  left: 0;
+  top: 11px;
+  transform: rotate(-180deg);
+  background: linear-gradient(246.06deg, #CF00FE 15.37%, rgba(255, 255, 255, 0) 116.95%);
+}
+.tfsection .tfsection_about .title {
+  margin-bottom: 20px;
+}
+.tfsection .tfsection_about .text_section {
+  padding-right: 50px;
+  margin-bottom: 26px;
+  text-transform: capitalize;
+  line-height: 2rem;
+}
+.tfsection .tfsection_about .icon_box {
+  border-bottom: 1px solid #E8E8E9;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  margin-top: 44px;
+  display: flex;
+  align-items: center;
+}
+.tfsection .tfsection_about .icon_box .icon_box-item {
+  width: auto;
+  height: auto;
+  transform: scale(1);
+  border-radius: 5px;
+}
+.tfsection .tfsection_about .icon_box .st2 {
+  margin-left: 30px;
+}
+.tfsection .tfsection_about .section_content2-footer {
+  display: flex;
+}
+.tfsection .tfsection_about .section_content2-footer .content2-footer {
+  display: flex;
+  align-self: center;
+  width: 200px;
+  height: 60px;
+  background: linear-gradient(246deg, #CF00FE -10%, #005DE0 87%);
+  border-radius: 30px;
+  margin-left: 32px;
+}
+.tfsection .tfsection_about .section_content2-footer .content2-footer .button_footer {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 60px;
+  margin: 0 auto;
+}
+.tfsection .tfsection_about .section_content2-footer .img_box {
+  display: flex;
+  position: relative;
+}
+.tfsection .tfsection_about .section_content2-footer .img_box .img_box-item {
+  margin-left: 80px;
+}
+.tfsection .tfsection_about .section_content2-footer .img_box .content {
+  margin-left: 10px;
+}
+.tfsection .tfsection_about .section_content2-footer .img_box .content .name {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  font-family: "Roboto Slab", serif;
+  color: #1B1D21;
+  text-transform: capitalize;
+}
+.tfsection .tfsection_about .section_content2-footer .img_box .content .ceo {
+  margin-bottom: 0;
+  color: #005DE0;
+  font-size: 14px;
+  line-height: 24px;
+}
 
 /*# sourceMappingURL=style.css.map */
