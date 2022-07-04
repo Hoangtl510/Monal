@@ -101,4 +101,14 @@ var swiper3 = new Swiper(".mySwiper3", {
   slidesPerView: 4,
 });
 
+//responsive 
+$('.menu_bars').click(function() {
+  $('.menu').toggleClass('show_menu');
+})
+
+var swiper = new Swiper(".mySwiper4", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+});
+
 

@@ -21,8 +21,8 @@
     <div id="loader"></div>
   </div>
   <header class="header">
-    <div class="main_container">
-      <section class="main_nav">
+    <div class="main_container-header">
+      <section class="main_nav" id="mymain_nav">
         <div class="header_logo">
           <img src="./images/logo_header.png" alt="logo" class="logo">
         </div>
@@ -40,6 +40,7 @@
             <li class="menu_first_items">
               <a href="#" class="menu_content">Home</a>
               <i class="far fa-plus"></i>
+              <i class="fas fa-caret-down icon_mobile"></i>
               <ul class="sub_menu">
                 <li>
                   <a href="#" class="sub_menu_items">Home 1</a>
@@ -55,6 +56,7 @@
             <li class="menu_items">
               <a href="#" class="menu_content">About</a>
               <i class="far fa-plus"></i>
+              <i class="fas fa-caret-down icon_mobile"></i>
               <ul class="sub_menu">
                 <li>
                   <a href="#" class="sub_menu_items">About</a>
@@ -85,6 +87,7 @@
             <li class="menu_items">
               <a href="#" class="menu_content">Portfolio</a>
               <i class="far fa-plus"></i> 
+              <i class="fas fa-caret-down icon_mobile"></i>
               <ul class="sub_menu">
                 <li>
                   <a href="#" class="sub_menu_items">Portfolio</a>
@@ -97,6 +100,7 @@
             <li class="menu_items">
               <a href="#" class="menu_content">Product</a>
               <i class="far fa-plus"></i> 
+              <i class="fas fa-caret-down icon_mobile"></i>
               <ul class="sub_menu">
                 <li>
                   <a href="#" class="sub_menu_items">Product</a>
@@ -109,6 +113,7 @@
             <li class="menu_items">
               <a href="#" class="menu_content">News</a>
               <i class="far fa-plus"></i> 
+              <i class="fas fa-caret-down icon_mobile"></i>
               <ul class="sub_menu">
                 <li>
                   <a href="#" class="sub_menu_items">Blog Standard</a>
@@ -134,9 +139,9 @@
       </section>
     </div>
   </header>
-  <div class="main">
-    <section class="page_title owl-carousel owl-theme">
-      <div class="page-title_container slide_1">
+  <main class="main">
+    <section class=" page_title owl-carousel owl-theme">
+      <div class="main_container  page-title_container slide_1">
         <div class="page_title_left">
           <p class="sub_title">We're The Best</p>
           <h1 class="title">Making IT A Part Of Your Business </h1>
@@ -149,7 +154,7 @@
           <img src="./images/imgslider.jpg" alt="anh slide" class="img_page_title">
         </div>
       </div>
-      <div class="page-title_container slide_2">
+      <div class="main_container  page-title_container slide_2">
         <div class="page_title_left">
           <p class="sub_title">We're The Best</p>
           <h1 class="title">Making IT A Part Of Your Business </h1>
@@ -162,7 +167,7 @@
           <img src="./images/imgslider.jpg" alt="anh slide" class="img_page_title">
         </div>
       </div>
-      <div class="page-title_container slide_3">
+      <div class="main_container  page-title_container slide_3">
         <div class="page_title_left">
           <p class="sub_title">We're The Best</p>
           <h1 class="title">Making IT A Part Of Your Business </h1>
@@ -604,22 +609,22 @@
           </p>
           <div thumbsSlider="" class="swiper mySwiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
+              <div class="swiper-slide" style="min-width: 80px">
                 <img src="./images/imgtestimonior1.jpg" alt="testimonial image"/>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide" style="min-width: 80px">
                 <img src="./images/imgtestimonior2.jpg" alt="testimonial image"/>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide" style="min-width: 80px">
                 <img src="./images/imgtestimonior3.jpg" alt="testimonial image"/>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide" style="min-width: 80px">
                 <img src="./images/imgtestimonior4.jpg" alt="testimonial image"/>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide" style="min-width: 80px">
                 <img src="./images/imgtestimonior5.jpg" alt="testimonial image"/>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide" style="min-width: 80px">
                 <span class="add">
                   <i class="fas fa-plus"></i>
                 </span>
@@ -869,7 +874,7 @@
         </div>
       </div>
     </section>
-  </div>
+  </main>
   <footer class="footer">
     <div class="footer_main">
       <div class="overlay">
@@ -934,19 +939,19 @@
             <h5 class="title">Popular Post</h5>
             <div class="recent_posts style">
               <img src="./images/thump4.jpg" alt="post image" class="img_post">
-              <div class="content_post">
-                <a href="#" class="title_post">The Future Is Bright, The Future Is IT</a>
+              <ul class="content_post">
+                <li href="#" class="title_post">The Future Is Bright, The Future Is IT</li>
                 <br>
-                <a href="#" class="time_post">20 Th Oct 2021</a>
-              </div>
+                <li href="#" class="time_post">20 Th Oct 2021</li>
+              </ul>
             </div>
             <div class="recent_posts">
               <img src="./images/thump4.jpg" alt="post image" class="img_post">
-              <div class="content_post">
-                <a href="#" class="title_post">The Future Is Bright, The Future Is IT</a>
+              <ul class="content_post">
+                <li href="#" class="title_post">The Future Is Bright, The Future Is IT</li>
                 <br>
-                <a href="#" class="time_post">20 Th Oct 2021</a>
-              </div>
+                <li href="#" class="time_post">20 Th Oct 2021</li>
+              </ul>
             </div>
           </div>
           <div class="contact">
