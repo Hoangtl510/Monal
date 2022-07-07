@@ -104,7 +104,7 @@ a:hover {
   display: block;
   margin: -50px 0 0 -50px;
   border: 3px solid transparent;
-  border-top-color: blue;
+  border-top-color: #9000FF;
   border-radius: 50%;
   -webkit-animation: spin 1.7s linear infinite;
           animation: spin 1.7s linear infinite;
@@ -119,7 +119,7 @@ a:hover {
   bottom: 5px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: red;
+  border-top-color: #00B0FC;
   -webkit-animation: spin-reverse 0.6s linear infinite;
           animation: spin-reverse 0.6s linear infinite;
 }
@@ -137,7 +137,6 @@ a:hover {
           animation: spin 1s linear infinite;
 }
 
-/******************* Header *******************/
 #header_main.is-fixed {
   transition: all 0.5s ease;
   z-index: 999;
@@ -170,7 +169,6 @@ a:hover {
   align-items: center;
   justify-content: center;
   width: 100%;
-  /******************* Logo *******************/
 }
 .header .main_nav .menu_bars {
   display: none;
@@ -196,8 +194,6 @@ a:hover {
 .header .main_nav .header_right {
   display: flex;
   flex: 1;
-  /******************* Header Contact *******************/
-  /******************* Header Menu *******************/
 }
 .header .main_nav .header_right .header_contact {
   margin-left: 20px;
@@ -304,6 +300,10 @@ a:hover {
 .header .main_nav .header_right .menu_bars {
   display: none;
 }
+.header + #temp {
+  height: 110px;
+  display: none;
+}
 .header.sticky {
   position: fixed;
   top: 0;
@@ -315,8 +315,10 @@ a:hover {
   transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
   z-index: 9999999;
 }
+.header.sticky + #temp {
+  display: block;
+}
 
-/******************* Main *******************/
 .main .page_title {
   background: url(../images/bgslider1.jpg);
   background-size: cover;
@@ -588,17 +590,18 @@ a:hover {
   visibility: hidden;
   opacity: 0;
   transform: translateX(-5px);
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 .main .services .main_services .icon_box .icon_box_content .read_more:hover i.before {
   visibility: hidden;
   opacity: 0;
   transform: translateX(5px);
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 .main .services .main_services .icon_box .icon_box_content .read_more:hover i.after {
   visibility: visible;
   opacity: 1;
+  transition: all 1.5s ease;
 }
 .main .services .main_services .icon_box .icon_box_content .read_more:after {
   position: absolute;
@@ -826,12 +829,11 @@ a:hover {
 .main .latest_project .project_right .slide_img .img_box:hover .hover_effect {
   opacity: 1;
   visibility: visible;
-  top: 78%;
-  transition: all 0.3s ease;
+  bottom: -35px;
 }
 .main .latest_project .project_right .slide_img .img_box:hover .hover_effect .content_box {
   margin-top: -40px;
-  transition: all 1s ease;
+  transition: all 0.1s ease;
 }
 .main .latest_project .project_right .slide_img .img_box:hover img {
   filter: brightness(50%);
@@ -843,18 +845,22 @@ a:hover {
   border-radius: 10px;
 }
 .main .latest_project .project_right .slide_img .img_box .hover_effect {
-  transition: all 0.3s ease;
-  transform: translate(-50%, -50%);
-  width: 90%;
-  opacity: 0;
   visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+  bottom: -50%;
   position: absolute;
-  top: 134%;
   left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 177px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 .main .latest_project .project_right .slide_img .img_box .hover_effect .content_box {
   background: linear-gradient(246deg, #CF00FE -19%, #005DE0 87%);
-  padding: 20px 20px;
+  padding: 20px 35px;
   cursor: pointer;
   border-radius: 10px;
   flex-wrap: wrap;
@@ -875,8 +881,8 @@ a:hover {
   width: 56px;
   height: 56px;
   position: absolute;
-  right: 4px;
-  bottom: 110px;
+  right: 15px;
+  bottom: 155px;
   background: #fff;
   display: flex;
   align-items: center;
@@ -2119,21 +2125,21 @@ a:hover {
 @-webkit-keyframes fadeInDown {
   0% {
     opacity: 0;
-    transform: translate3d(0, -100%, 0);
+    transform: translateY(-100%);
   }
   100% {
     opacity: 1;
-    transform: translateZ(0);
+    transform: translateY(0);
   }
 }
 @keyframes fadeInDown {
   0% {
     opacity: 0;
-    transform: translate3d(0, -100%, 0);
+    transform: translateY(-100%);
   }
   100% {
     opacity: 1;
-    transform: translateZ(0);
+    transform: translateY(0);
   }
 }
 @media screen and (max-width: 1440px) {

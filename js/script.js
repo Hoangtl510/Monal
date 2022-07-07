@@ -52,9 +52,9 @@ let header = document.querySelector(".header");
   });
 
 // pre-loader
-setTimeout(function() {
+$(window).on('load', function () {
   $('#pre-loader').addClass('show');
-}, 0);
+})
 
 let number = 0;
 function demSo() {

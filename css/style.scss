@@ -102,7 +102,7 @@ a {
     display: block;
     margin: -50px 0 0 -50px;
     border: 3px solid transparent;
-    border-top-color: blue;
+    border-top-color: #9000FF;
     border-radius: 50%;
     animation: spin 1.7s linear infinite;
     z-index: 999999999;
@@ -115,7 +115,7 @@ a {
       bottom: 5px;
       border-radius: 50%;
       border: 3px solid transparent;
-      border-top-color: red;
+      border-top-color: #00B0FC;
       animation: spin-reverse .6s linear infinite;
     }
     &:after {
@@ -132,7 +132,7 @@ a {
     }
   }
 }
-/******************* Header *******************/
+
 #header_main.is-fixed {
   transition: all 0.5s ease;
   z-index: 999;
@@ -152,10 +152,6 @@ a {
 .header {
   width: 100%;
   background-color: #fff;
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  // right: 0;
   z-index: 10000;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
   .main_nav {
@@ -168,8 +164,7 @@ a {
     width: 100%;
     .menu_bars {
       display: none;
-    }
-    /******************* Logo *******************/    
+    } 
     .header_logo {
       max-width: 220px;
       min-width: 220px;
@@ -191,7 +186,6 @@ a {
     .header_right {
       display: flex;
       flex: 1;      
-    /******************* Header Contact *******************/
       .header_contact {
         margin-left: 20px;
         display: flex;
@@ -227,7 +221,6 @@ a {
           }
         }
       }
-      /******************* Header Menu *******************/
       .menu {
         margin: 4px 0 0 20px;
         display: flex;  
@@ -301,20 +294,27 @@ a {
       }
     }
   }
+
+  + #temp {
+    height: 110px;
+    display: none;
+  }
   &.sticky {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    // box-shadow: 0 8px 20px 0 rgb(0 0 0 / 10%);
     background-color: #fff;
     animation: .95s ease-in-out 0s normal none 1 running fadeInDown;
     transition: all .7s cubic-bezier(.645,.045,.355,1);
     z-index: 9999999;
+    + #temp {
+      display: block;
+    }
   }
 }
 
-/******************* Main *******************/
+
 .main {
   .page_title {
     background: url(../images/bgslider1.jpg);
@@ -595,7 +595,7 @@ a {
                 visibility: hidden;
                 opacity: 0;
                 transform: translateX(-5px);
-                transition: all 0.3s ease;
+                transition: all 0.4s ease;
               }
             }
             &:hover {
@@ -604,12 +604,12 @@ a {
                   visibility: hidden;
                   opacity: 0;
                   transform: translateX(5px);
-                  transition: all 0.3s ease;
+                  transition: all 0.4s ease;
                 }
                 &.after {
                   visibility: visible;
                   opacity: 1;
-
+                  transition: all 1.5s ease;
                 }
 
               }
@@ -848,11 +848,10 @@ a {
             .hover_effect {
               opacity: 1;
               visibility: visible;
-              top: 78%;
-              transition: all 0.3s ease;
+              bottom: -35px;
               .content_box {
                 margin-top: -40px;
-                transition: all 1s ease;
+                transition: all 0.1s ease;
               }
             }
             img {
@@ -865,17 +864,21 @@ a {
             border-radius: 10px;
           }
           .hover_effect {
-            transition: all 0.3s ease;
-            transform: translate(-50%, -50%);
-            width: 90%;
+            visibility:hidden;
             opacity: 0;
-            visibility: hidden;
+            transition: all 0.5s ease;
+            bottom: -50%;
             position: absolute;
-            top: 134%;
             left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            height: 177px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
             .content_box {
               background: linear-gradient(246deg, #CF00FE -19%, #005DE0 87%);
-              padding: 20px 20px;
+              padding: 20px 35px;
               cursor: pointer;
               border-radius: 10px;
               flex-wrap: wrap;
@@ -897,8 +900,8 @@ a {
                 width: 56px;
                 height: 56px;
                 position: absolute;
-                right: 4px;
-                bottom: 110px;
+                right: 15px;
+                bottom: 155px;
                 background: #fff;
                 display: flex;
                 align-items: center;
@@ -2151,11 +2154,11 @@ a {
 @keyframes fadeInDown {
   0% {
     opacity: 0;
-    transform: translate3d(0,-100%,0);
+    transform: translateY(-100%); 
 }
   100% {
     opacity: 1;
-    transform: translateZ(0);
+    transform: translateY(0);
 }
 }
 @media screen and (max-width: 1440px) {
